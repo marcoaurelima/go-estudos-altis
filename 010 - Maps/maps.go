@@ -5,7 +5,6 @@ import "fmt"
 func main() {
 	//Dentro dos [] fica os tipos das chaves
 	//E fora fica o tipo dos valores
-	//Não é possível ter chaves de tipos diferentes ou valores de tipos diferentes
 	//Ex: usuario := map[int]string{}
 	usuario := map[string]string{
 		"nome":      "Alan",
