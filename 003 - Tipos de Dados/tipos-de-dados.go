@@ -64,4 +64,21 @@ func main() {
 	var varErro error
 	varErro = errors.New("Texto do seu erro")
 	fmt.Println(varErro)
+
+	// Tipo interface (genérico)
+	// Usado para valores dinâmicos que não se sabe o tipo de antemão
+	quadrado := func(a interface{})interface{} {
+    switch v := a.(type) {
+		case int:
+			return v * v
+		case float64:
+			return v * v
+		default:
+			return nil
+		}
+	}
+  
+  fmt.Println(quadrado(3))
+  fmt.Println(quadrado(2.5))
+
 }
