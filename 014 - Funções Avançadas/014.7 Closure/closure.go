@@ -13,7 +13,7 @@ func closure() func() {
 }
 
 func main() {
-	texto := "Dentro da função maon"
+	texto := "Dentro da função main"
 	fmt.Println(texto)
 
 	funcaoNova := closure()
