@@ -13,6 +13,15 @@ func main() {
 	}
 	fmt.Println(usuario)
 
+  
+  // make para chaves de tipos diferentes
+  pessoa := make(map[interface{}]string)
+  pessoa[0] = "31"
+  pessoa["nome"] = "marco"
+  pessoa[3.14] = "PI"
+  
+  fmt.Printf("%s | %s | %s\n", pessoa["nome"], pessoa[0], pessoa[3.14])
+
 	//Para acessar o valor usa-se nomeDaVariavel["chave"]
 	fmt.Println(usuario["nome"])
 
