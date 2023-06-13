@@ -1,4 +1,4 @@
-module projetomongo
+module mongoconnect
 
 go 1.20
 
